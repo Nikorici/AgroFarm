@@ -1,0 +1,88 @@
+.post-ad-page {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .form-group {
+        margin-bottom: 25px;
+
+        label {
+          font-weight: bold;
+          margin-bottom: 5px;
+          display: block;
+        }
+
+        input,
+        select,
+        textarea {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          width: 100%;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        height: 64px;
+        border: 1px solid #000000;
+        border-radius: 15px;
+        padding: 10px 25px;
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        margin: 30px auto;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            border: 1px solid #107f1d;
+
+        }
+      }
+    }
+
+    #success-message {
+      display: none;
+      padding: 10px;
+      background-color: #28a745;
+      color: #fff;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+  .product-characteristics {
+    display: flex;
+    gap: 25px;
+  
+    .form-group {
+      label {
+        margin-bottom: 5px;
+      }
+  
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+  
+        select {
+          padding: 6px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+  
+}

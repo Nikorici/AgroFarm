@@ -1,0 +1,29 @@
+@import "common/breakpoints.scss";
+@import "common/colors.scss";
+@import "fonts";
+@import "common/mixins.scss";
+@import "common/margins.scss";
+@import "common/global.scss";
+@import "common/general-classes.scss";
+@import "common/buttons.scss";
+
+
+
+@import "components/footer.scss";
+@import "components/header.scss";
+
+@import "components/content-404.scss";
+
+@import "components/page-contactUs.scss";
+
+
+@import "components/home-page.scss";
+@import "components/shop-page.scss";
+@import "components/product-element.scss";
+@import "components/cart.scss";
+@import "components/checkout.scss";
+@import "components/place-product.scss";
+
+// end widgets
+
+

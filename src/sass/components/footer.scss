@@ -1,0 +1,127 @@
+footer {
+  border-top: 1px solid #9f9f9f;
+  margin-top: 80px;
+  padding-top: 50px;
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    p {
+      color: #9F9F9F;
+      font-weight: 500;
+    }
+    a {
+      color: #000000;
+      font-weight: 500;
+    }
+  }
+  .input-group {
+    display: inline-block;
+    margin-top: 10px;
+
+    .email-input {
+      padding: 10px;
+      width: 300px;
+      border: none; // elimină bordura
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: transparent; // elimină culoarea de fundal
+      color: #333; // culoarea textului
+      outline: none; // elimină conturul la focus
+      border-bottom: 1px solid #000000;
+    }
+
+    .subscribe-btn {
+      padding: 10px 20px;
+      background-color: transparent; // elimină culoarea de fundal
+      color: #333; // culoarea textului
+      border: none; // elimină bordura
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      border-bottom: 1px solid #000000;
+    }
+  }
+  .connect {
+    margin-top: 20px;
+  }
+  .media-contact {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  footer {
+    .footer-section {
+      flex-direction: column; // Schimbă direcția pentru a avea elementele una sub alta
+      align-items: center; // Centrează elementele pe axa orizontală
+    }
+    .company {
+      margin-bottom: 20px; // Adaugă spațiu între logo și celelalte elemente
+    }
+    .footer-links {
+      display: flex; // Așează elementele pe aceeași linie
+      justify-content: space-around; // Distribuie elementele în spațiul disponibil
+      flex: 0 1 90%; // Setează lățimea elementului la 90%, dar păstrează flexibilitatea pentru a se ajusta la conținut
+      text-align: center; // Centrează textul în interiorul fiecărui element
+    }
+    .input-group,
+    .connect,
+    .media-contact {
+      flex: 0 1 30%; // Setează lățimea elementului la 30%, dar păstrează flexibilitatea pentru a se ajusta la conținut
+      margin-top: 20px; // Adaugă un spațiu între elemente
+      text-align: center; // Centrează textul în interiorul fiecărui element
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    .footer-section {
+      flex-direction: column; // Schimbă direcția pentru a avea elementele una sub alta
+      align-items: center; // Centrează elementele pe axa orizontală
+    }
+    .footer-links {
+      gap: 20px; // Redu spațiul între elemente
+      text-align: center; // Centrează textul în interiorul fiecărui element
+    }
+    .input-group {
+      .email-input {
+        width: 100%; // Extinde câmpul de introducere pentru a umple întreaga lățime
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  footer {
+    padding: 20px; // Redu spațiul de la marginea footer-ului
+    .footer-section {
+      flex-direction: column; // Schimbă direcția pentru a avea elementele una sub alta
+      align-items: center; // Centrează elementele pe axa orizontală
+    }
+    .footer-links {
+      gap: 10px; // Redu spațiul între elemente
+      text-align: center; // Centrează textul în interiorul fiecărui element
+    }
+    .input-group {
+      .email-input {
+        width: 100%; // Extinde câmpul de introducere pentru a umple întreaga lățime
+      }
+      .subscribe-btn {
+        margin-top: 10px; // Adaugă un spațiu între câmpul de introducere și buton
+      }
+    }
+    .connect {
+      margin-top: 10px; // Adaugă un spațiu între elementele de contact
+    }
+    .media-contact {
+      margin-top: 20px; // Adaugă un spațiu între iconițele de social media
+    }
+  }
+}

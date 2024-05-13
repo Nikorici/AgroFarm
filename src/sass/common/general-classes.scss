@@ -1,0 +1,20 @@
+@include respondto(desktop) {
+  .container {
+    max-width: 1440px;
+    padding: 0 2.5rem;
+
+    @include respondto(desktop) {
+      max-width: 1300px;
+    }
+
+    @include respondto(onlyDesktop) {
+      padding: 0 4.5rem;
+  
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

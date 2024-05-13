@@ -1,0 +1,110 @@
+<section class="post-ad-page">
+  <div class="breadcrumb-container">
+    <div class="banner-principal">
+      <img
+        src="../../img/Checkout-img.png"
+        alt="Imagine"
+        class="background-image"
+      />
+      <div class="principal-text">
+        <h1>Plasare Produs</h1>
+      </div>
+      <div class="breadcrumb">
+        <a href="#">Acasă</a>
+        <span class="separator">></span>
+        <span>Plasare Produs</span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Plasează un anunț</h1>
+    <form id="post-ad-form">
+      <div class="form-group">
+        <label for="product-image">Imagine produs:</label>
+        <input
+          type="file"
+          id="product-image"
+          name="product-image"
+          accept="image/*"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="product-name">Nume produs:</label>
+        <input type="text" id="product-name" name="product-name" required />
+      </div>
+      <div class="form-group">
+        <label for="category">Categorie:</label>
+        <select id="category" name="category" required>
+          <option value="" selected disabled>Selectează o categorie</option>
+          <option value="pesticide">Pesticide</option>
+          <option value="erbicide">Erbicide</option>
+          <option value="plante">Plante</option>
+          <option value="fructe">Fructe</option>
+          <option value="legume">Legume</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Descriere:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div class="product-characteristics">
+        <div class="form-group">
+          <label for="price">Preț:</label>
+          <div>
+            <input type="text" id="price" name="price" required />
+            <select name="currency" id="currency">
+              <option value="lei">lei</option>
+              <option value="euro">euro</option>
+              <option value="dolari">dolari</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="unit">Unitate de măsură:</label>
+          <div>
+            <input type="text" id="unit" name="unit" required />
+            <select name="measure" id="measure">
+              <option value="kg">kg</option>
+              <option value="litri">litri</option>
+              <!-- adaugă alte opțiuni aici -->
+            </select>
+          </div>
+        </div>
+      </div>      
+
+      <div class="form-group">
+        <label for="country">Țară:</label>
+        <select id="country" name="country" required>
+          <option value="" selected disabled>Selectează o țară</option>
+          <option value="Romania">Romania</option>
+          <option value="Moldova">Moldova</option>
+          <option value="Ukraina">Ukraina</option>
+          <!-- Adaugă alte opțiuni aici -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="city">Oraș:</label>
+        <input type="text" id="city" name="city" placeholder="Introdu orașul" required />
+      </div>
+      <div class="form-group">
+        <label for="street">Stradă:</label>
+        <input type="text" id="street" name="street" placeholder="Introdu strada" required />
+      </div>
+      
+      <div class="form-group">
+        <label for="contact">Număr de contact:</label>
+        <input type="text" id="contact" name="contact" required pattern="[0-9]+" title="Introdu doar cifre." />
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Adresă de e-mail:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <button type="submit">Plasează anunțul</button>
+    </form>
+    <div id="success-message" style="display: none">
+      Anunțul a fost plasat cu succes!
+    </div>
+  </div>
+</section>
