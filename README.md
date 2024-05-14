@@ -4,4 +4,4 @@ nvm i
 
 gulp install
 
-hulp watch
+gulp watch
