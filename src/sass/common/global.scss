@@ -58,6 +58,7 @@ p {
   font-size: 16px;
   line-height: 22px;
   color: #3c3535;
+  margin: 0;
   @include respondto(phone) {
     font-size: 1.4rem;
     line-height: 2rem;

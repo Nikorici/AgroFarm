@@ -988,7 +988,8 @@ p {
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: #3c3535; }
+  color: #3c3535;
+  margin: 0; }
   @media (max-width: 767px) {
     p {
       font-size: 1.4rem;
@@ -2104,10 +2105,17 @@ footer {
         padding: 5px;
         width: 32px;
         height: 32px;
-        text-align: center; }
-    .cart-page__shop .left-component .product-img button {
+        text-align: center;
+        margin: 0; }
+    .cart-page__shop .left-component .rubbish {
       background-color: transparent;
       border: none; }
+      .cart-page__shop .left-component .rubbish img {
+        width: 28px !important;
+        height: 28px !important; }
+    .cart-page__shop .left-component .product-img img {
+      width: 100px;
+      height: 100px; }
     .cart-page__shop .left-component .product-info p {
       margin: 0; }
     .cart-page__shop .left-component svg {
@@ -2141,13 +2149,15 @@ footer {
     .cart-page__shop .right-component .price {
       display: flex;
       margin-top: 30px;
-      align-items: center; }
+      align-items: center;
+      justify-content: space-between; }
       .cart-page__shop .right-component .price .total-price {
         font-size: 20px;
         color: #b88e2f; }
       .cart-page__shop .right-component .price p {
         font-weight: 500;
-        width: 80px; }
+        width: 80px;
+        margin: 0; }
 
 .post-ad-page .container {
   max-width: 800px;
