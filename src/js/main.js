@@ -87,3 +87,27 @@ $('.rating-button').click(function() {
       //     });
       // });
       
+
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const radioContainers = document.querySelectorAll('.radio-container');
+        const paymentInfos = document.querySelectorAll('.payment-info');
+      
+        radioContainers.forEach((container) => {
+          container.addEventListener('click', () => {
+            const radioInput = container.querySelector('input[type="radio"]');
+            const paymentInfo = container.querySelector('.payment-info');
+      
+            // Hide all payment-info sections
+            paymentInfos.forEach((info) => {
+              info.classList.remove('show');
+            });
+      
+            // Show the current payment-info section if the radio button is checked
+            if (radioInput.checked) {
+              paymentInfo.classList.add('show');
+            }
+          });
+        });
+      });
+      
