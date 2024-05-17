@@ -4,55 +4,16 @@
 @@include("partials/stars.js");
 
 
-$(document).ready(function() {
-    $(".search-buton").click(function() {
-      $(".search-element").toggleClass("hidden"); // Toggle the hidden class of the search element
-    });
-  });
+var map = L.map('map').setView([47.4116, 28.3699], 7);
 
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+            maxZoom: 18
+        }).addTo(map);
 
-  $(document).ready(function() {
-    $(".heart-button").click(function() {
-      $("#heartPopup").toggleClass("show-popup");
-      $(".overlay").toggleClass("show-popup");
-    });
-
-    $(".cart-button").click(function() {
-      $("#cartPopup").toggleClass("show-popup");
-      $(".overlay").toggleClass("show-popup");
-    });
-
-    $(".overlay, .close-button").click(function() {
-      $(".popup").removeClass("show-popup");
-      $(".overlay").removeClass("show-popup");
-    });
-  });
-  
-
-$(document).ready(function() {
-  $('#descriptionButton').addClass('active'); // adăugăm clasa 'active' la primul buton
-  $('#descriptionContent').removeClass('hidden');
-});
-
-$('.rating-button').click(function() {
-  $('.rating-button').removeClass('active'); // eliminăm clasa 'active' de pe toate butoanele
-  $(this).addClass('active'); // adăugăm clasa 'active' doar pe butonul apăsat
-  $('.rating-content > div').addClass('hidden');
-  const contentId = $(this).attr('id').replace('Button', 'Content');
-  $(`#${contentId}`).removeClass('hidden');
-});
-
-
-    var map = L.map('map').setView([47.4116, 28.3699], 7);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-        maxZoom: 18
-    }).addTo(map);
-
-    L.marker([47.4116, 28.3699]).addTo(map)
-        .bindPopup('Product Location')
-        .openPopup();
+        L.marker([47.4116, 28.3699]).addTo(map)
+            .bindPopup('Product Location')
+            .openPopup();
 
 
       //   document.addEventListener('DOMContentLoaded', function () {
@@ -86,28 +47,4 @@ $('.rating-button').click(function() {
       //         });
       //     });
       // });
-      
-
-
-      document.addEventListener('DOMContentLoaded', () => {
-        const radioContainers = document.querySelectorAll('.radio-container');
-        const paymentInfos = document.querySelectorAll('.payment-info');
-      
-        radioContainers.forEach((container) => {
-          container.addEventListener('click', () => {
-            const radioInput = container.querySelector('input[type="radio"]');
-            const paymentInfo = container.querySelector('.payment-info');
-      
-            // Hide all payment-info sections
-            paymentInfos.forEach((info) => {
-              info.classList.remove('show');
-            });
-      
-            // Show the current payment-info section if the radio button is checked
-            if (radioInput.checked) {
-              paymentInfo.classList.add('show');
-            }
-          });
-        });
-      });
       

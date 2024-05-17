@@ -2168,9 +2168,16 @@ footer {
 .checkout-page .container .checkout-page__section {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px; }
+  margin-top: 50px;
+  gap: 40px; }
+  @media (max-width: 767px) {
+    .checkout-page .container .checkout-page__section {
+      flex-direction: column; } }
   .checkout-page .container .checkout-page__section .left-section, .checkout-page .container .checkout-page__section .right-section {
     width: 48%; }
+    @media (max-width: 767px) {
+      .checkout-page .container .checkout-page__section .left-section, .checkout-page .container .checkout-page__section .right-section {
+        width: 100% !important; } }
   .checkout-page .container .checkout-page__section .input-group {
     margin-bottom: 20px; }
     .checkout-page .container .checkout-page__section .input-group label {

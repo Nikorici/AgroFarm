@@ -10,9 +10,16 @@
           display: flex;
           justify-content: space-between;
           margin-top: 50px;
+          gap: 40px;
+          @media (max-width: 767px) {
+           flex-direction: column;
+          }
       
           .left-section, .right-section {
             width: 48%;
+            @media (max-width: 767px) {
+                width: 100% !important;
+               }
           }
       
        
