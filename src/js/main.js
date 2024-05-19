@@ -4,6 +4,45 @@
 @@include("partials/stars.js");
 
 
+$(document).ready(function() {
+    $(".search-buton").click(function() {
+      $(".search-element").toggleClass("hidden"); // Toggle the hidden class of the search element
+    });
+  });
+
+
+  $(document).ready(function() {
+    $(".heart-button").click(function() {
+      $("#heartPopup").toggleClass("show-popup");
+      $(".overlay").toggleClass("show-popup");
+    });
+
+    $(".cart-button").click(function() {
+      $("#cartPopup").toggleClass("show-popup");
+      $(".overlay").toggleClass("show-popup");
+    });
+
+    $(".overlay, .close-button").click(function() {
+      $(".popup").removeClass("show-popup");
+      $(".overlay").removeClass("show-popup");
+    });
+  });
+  
+
+$(document).ready(function() {
+  $('#descriptionButton').addClass('active'); // adăugăm clasa 'active' la primul buton
+  $('#descriptionContent').removeClass('hidden');
+});
+
+$('.rating-button').click(function() {
+  $('.rating-button').removeClass('active'); // eliminăm clasa 'active' de pe toate butoanele
+  $(this).addClass('active'); // adăugăm clasa 'active' doar pe butonul apăsat
+  $('.rating-content > div').addClass('hidden');
+  const contentId = $(this).attr('id').replace('Button', 'Content');
+  $(`#${contentId}`).removeClass('hidden');
+});
+
+
 var map = L.map('map').setView([47.4116, 28.3699], 7);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
