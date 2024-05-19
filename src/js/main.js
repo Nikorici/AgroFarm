@@ -43,16 +43,16 @@ $('.rating-button').click(function() {
 });
 
 
-    var map = L.map('map').setView([47.4116, 28.3699], 7);
+var map = L.map('map').setView([47.4116, 28.3699], 7);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-        maxZoom: 18
-    }).addTo(map);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+            maxZoom: 18
+        }).addTo(map);
 
-    L.marker([47.4116, 28.3699]).addTo(map)
-        .bindPopup('Product Location')
-        .openPopup();
+        L.marker([47.4116, 28.3699]).addTo(map)
+            .bindPopup('Product Location')
+            .openPopup();
 
 
       //   document.addEventListener('DOMContentLoaded', function () {
@@ -86,28 +86,4 @@ $('.rating-button').click(function() {
       //         });
       //     });
       // });
-      
-
-
-      document.addEventListener('DOMContentLoaded', () => {
-        const radioContainers = document.querySelectorAll('.radio-container');
-        const paymentInfos = document.querySelectorAll('.payment-info');
-      
-        radioContainers.forEach((container) => {
-          container.addEventListener('click', () => {
-            const radioInput = container.querySelector('input[type="radio"]');
-            const paymentInfo = container.querySelector('.payment-info');
-      
-            // Hide all payment-info sections
-            paymentInfos.forEach((info) => {
-              info.classList.remove('show');
-            });
-      
-            // Show the current payment-info section if the radio button is checked
-            if (radioInput.checked) {
-              paymentInfo.classList.add('show');
-            }
-          });
-        });
-      });
       

@@ -129,33 +129,36 @@
     </div>
   </div>
 
-  <div class="banner">
-    <div class="left-content">
-      <div class="filtre-section">
-        <div class="filtre-section__selector">
-          <img src="../../img/system-uicons_filtering.png" alt="" />
-          <p>Filtre</p>
+  <div class="filtre-banner">
+    <div class="container">
+      <div class="banner">
+        <div class="left-content">
+          <div class="filtre-section">
+            <div class="filtre-section__selector" id="filter-button">
+              <img src="../../img/system-uicons_filtering.png" alt="" />
+              <p>Filtre</p>
+            </div>
+            <img src="../../img/selector.png" alt="" />
+            <img src="../../img/Vector.png" alt="" />
+          </div>
+          <span></span>
+          <div class="page-sesult">
+            <p>Showing 1–16 of 32 results</p>
+          </div>
         </div>
-        <img src="../../img/selector.png" alt="" />
-        <img src="../../img/Vector.png" alt="" />
-      </div>
-      <span></span>
-      <div class="page-sesult">
-        <p>Showing 1–16 of 32 results</p>
-      </div>
-    </div>
-    <div class="right-content">
-      <div class="select-element">
-        <span>Show</span>
-        <div class="number-square">16</div>
-      </div>
-      <div class="select-element">
-        <span>Short by</span>
-        <div class="number-square">Default</div>
+        <div class="right-content">
+          <div class="select-element">
+            <span>Show</span>
+            <div class="number-square">16</div>
+          </div>
+          <div class="select-element">
+            <span>Short by</span>
+            <div class="number-square">Default</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
   <div class="container">
     <div class="card-group">
       <div class="card">
@@ -322,6 +325,78 @@
     <button class="page-button">3</button>
     <button class="next-button">Next</button>
   </div>
+  
+  <!-- Filter Pop-up -->
+  <div id="filter-popup" class="filter-popup">
+    <div class="filter-popup-content">
+      <span id="close-filter-popup" class="close-filter-popup">&times;</span>
+      
+      <!-- Price Filter Section -->
+      <div class="filter-section">
+        <h3>Preț, lei</h3>
+        <div class="range-slider">
+          <input type="number" min="0" max="10000" step="100" value="300" id="price-min" />
+          <input type="number" min="0" max="10000" step="100" value="4000" id="price-max" />
+          <input type="range" min="0" max="10000" step="100" value="300" id="price-range-min" />
+          <input type="range" min="0" max="10000" step="100" value="4000" id="price-range-max" />
+        </div>
+      </div>
+      
+      <!-- Volume Filter Section -->
+      <div class="filter-section">
+        <h3>Volum</h3>
+        <select id="unit-selector">
+          <option value="kg">kg</option>
+          <option value="litri">litri</option>
+          <!-- Add more units as needed -->
+        </select>
+        <div class="range-slider">
+          <input type="number" min="0" max="1000" step="10" value="10" id="volume-min" />
+          <input type="number" min="0" max="1000" step="10" value="100" id="volume-max" />
+          <input type="range" min="0" max="1000" step="10" value="10" id="volume-range-min" />
+          <input type="range" min="0" max="1000" step="10" value="100" id="volume-range-max" />
+        </div>
+      </div>
+
+      <!-- Plant Types Filter Section -->
+      <div class="filter-section">
+        <h3>Plant Types</h3>
+        <ul>
+          <li><input type="checkbox" id="wheat" /><label for="wheat">Wheat</label></li>
+          <li><input type="checkbox" id="corn" /><label for="corn">Corn</label></li>
+          <li><input type="checkbox" id="soybeans" /><label for="soybeans">Soybeans</label></li>
+          <li><input type="checkbox" id="vegetables" /><label for="vegetables">Vegetables</label></li>
+          <!-- Add more filter options as needed -->
+        </ul>
+      </div>
+
+      <!-- Herbicides Filter Section -->
+      <div class="filter-section">
+        <h3>Herbicides</h3>
+        <ul>
+          <li><input type="checkbox" id="herbicide1" /><label for="herbicide1">Herbicide 1</label></li>
+          <li><input type="checkbox" id="herbicide2" /><label for="herbicide2">Herbicide 2</label></li>
+          <!-- Add more filter options as needed -->
+        </ul>
+      </div>
+
+      <!-- Regions Filter Section -->
+      <div class="filter-section">
+        <h3>Region</h3>
+        <ul>
+          <li><input type="checkbox" id="chisinau" /><label for="chisinau">Chisinau</label></li>
+          <li><input type="checkbox" id="balti" /><label for="balti">Balti</label></li>
+          <li><input type="checkbox" id="drochia" /><label for="drochia">Drochia</label></li>
+          <!-- Add more regions as needed -->
+        </ul>
+      </div>
+
+      <!-- Add a confirm button -->
+      <button id="confirm-button" class="confirm-button">Confirmare</button>
+    </div>
+  
+
+  
 </section>
 
 </div>
