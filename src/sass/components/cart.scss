@@ -74,6 +74,7 @@
         justify-content: center;
         margin: 45px 0 60px;
         font-size: 20px;
+        color: #000;
       }
       h3 {
         font-size: 32px;
@@ -86,15 +87,54 @@
         margin-top: 30px;
         align-items: center;
         justify-content: space-between;
+        margin: 0 auto;
+
         .total-price {
-          font-size: 20px;
+          font-size: 32px;
           color: #b88e2f;
         }
         p {
           font-weight: 500;
-          width: 80px;
           margin: 0;
+          display: flex;
+          gap: 5px;
         }
+      }
+    }
+  }
+}
+.company-page {
+  .product-related {
+    .card-body {
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+      .change-element {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      .card-text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #128d3f;
+        color: #128d3f;
+        border-radius: 10px;
+        padding: 5px 25px;
+
+        p {
+          font-size: 22px;
+        }
+      }
+      .delite-text {
+        border: 1px solid #ff2d2d;
+        color: #ff2d2d;
+        border-radius: 10px;
+        padding: 5px 25px;
       }
     }
   }

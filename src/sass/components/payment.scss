@@ -1,4 +1,10 @@
 .payment {
+    h1 {
+        margin: 40px auto;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+    }
     body {
         font-family: Arial, sans-serif;
         background-color: #f5f5f5;
@@ -22,7 +28,7 @@
         position: relative;
         width: 520px;
         height: 290px;
-        background: linear-gradient(135deg, #a4508b, #5f0a87);
+        background: linear-gradient(135deg, #32eb3e, #0e6032);
         border-radius: 10px;
         color: #fff;
         padding: 20px;
@@ -92,7 +98,7 @@
         button {
             padding: 10px;
             font-size: 16px;
-            background: #5f0a87;
+            background: #0e6032;
             color: #fff;
             border: none;
             border-radius: 4px;

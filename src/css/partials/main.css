@@ -2244,6 +2244,16 @@ footer {
 
 .company-detale {
   margin-top: 40px; }
+  .company-detale .edit-profile {
+    border: 1px solid #36aa1a;
+    color: #36aa1a;
+    padding: 5px 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px; }
+    .company-detale .edit-profile img {
+      width: 20px;
+      height: 20px; }
 
 .company-detale {
   display: flex;
@@ -2309,7 +2319,8 @@ footer {
       align-items: center;
       justify-content: center;
       margin: 45px 0 60px;
-      font-size: 20px; }
+      font-size: 20px;
+      color: #000; }
     .cart-page__shop .right-component h3 {
       font-size: 32px;
       font-weight: 700;
@@ -2319,14 +2330,43 @@ footer {
       display: flex;
       margin-top: 30px;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin: 0 auto; }
       .cart-page__shop .right-component .price .total-price {
-        font-size: 20px;
+        font-size: 32px;
         color: #b88e2f; }
       .cart-page__shop .right-component .price p {
         font-weight: 500;
-        width: 80px;
-        margin: 0; }
+        margin: 0;
+        display: flex;
+        gap: 5px; }
+
+.company-page .product-related .card-body img {
+  width: 20px;
+  height: 20px; }
+
+.company-page .product-related .card-body .change-element {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-top: 20px; }
+
+.company-page .product-related .card-body .card-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #128d3f;
+  color: #128d3f;
+  border-radius: 10px;
+  padding: 5px 25px; }
+  .company-page .product-related .card-body .card-text p {
+    font-size: 22px; }
+
+.company-page .product-related .card-body .delite-text {
+  border: 1px solid #ff2d2d;
+  color: #ff2d2d;
+  border-radius: 10px;
+  padding: 5px 25px; }
 
 .checkout-page .container .user-name {
   display: flex;
@@ -2512,6 +2552,12 @@ footer {
       border: 1px solid #ccc;
       border-radius: 5px; }
 
+.payment h1 {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase; }
+
 .payment body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -2533,7 +2579,7 @@ footer {
   position: relative;
   width: 520px;
   height: 290px;
-  background: linear-gradient(135deg, #a4508b, #5f0a87);
+  background: linear-gradient(135deg, #32eb3e, #0e6032);
   border-radius: 10px;
   color: #fff;
   padding: 20px;
@@ -2587,7 +2633,7 @@ footer {
   .payment .form button {
     padding: 10px;
     font-size: 16px;
-    background: #5f0a87;
+    background: #0e6032;
     color: #fff;
     border: none;
     border-radius: 4px;
