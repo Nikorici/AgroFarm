@@ -2,6 +2,7 @@
 @@include("partials/image.js");
 @@include("partials/number-element.js");
 @@include("partials/stars.js");
+@@include("partials/payment.js");
 
 
 $(document).ready(function() {

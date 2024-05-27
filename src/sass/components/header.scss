@@ -62,7 +62,18 @@
 
         .product {
           position: absolute;
-          
+          background: #b88e2f;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          top: 17px;
+          right: 0;
+
+          p {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+          }
         }
       }
     }
