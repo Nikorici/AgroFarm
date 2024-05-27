@@ -116,51 +116,146 @@
 
 
 <div class="body-page">
-  <div class="container">
-    <div class="general-page page-suplimentar">
-      <section class="contact">
-  <div class="container">
-    <div class="hreader-contact">
-      <h1>Contact Us</h1>
-      <p>
-        Need assistance or have questions regarding asbestos-related illness?
-        Contact us today for specialized information and guidance. We are here
-        to provide support and help you navigate through this challenging
-        journey.
-      </p>
-    </div>
-    <div class="contact-company">
-      <div class="contact-company__information">
-        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-        <p>2118 Thornridge Cir. Syracuse, California 208434</p>
+ <!-- widgets -->
+ <section class="checkout-page">
+  <div class="breadcrumb-container">
+    <div class="banner-principal">
+      <img
+        src="../../img/Checkout-img.png"
+        alt="Imagine"
+        class="background-image"
+      />
+      <div class="principal-text">
+        <h1>Checkout</h1>
       </div>
-      <div class="contact-company__information">
-        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
-        <p>+088 (246) 642-27-10</p>
-        <p>+088 (246) 642-27-10</p>
-      </div>
-      <div class="contact-company__information">
-        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-        <p>AgroFarm@gmail.com</p>
+      <div class="breadcrumb">
+        <a href="#">Acasă</a>
+        <span class="separator">></span>
+        <span>Checkout</span>
       </div>
     </div>
-    <div class="custom-section">
-        <div class="custom-section__image">
-          <img src="../../img/Map.png" alt="Image">
+  </div>
+  <div class="container">
+    <div class="checkout-page__section">
+      <div class="left-section">
+        <h2>Billing details</h2>
+        <div class="user-name">
+          <div class="input-group">
+            <label>First Name:</label>
+            <input type="text" id="first-name" placeholder="First Name" />
+          </div>
+          <div class="input-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" placeholder="Last Name" />
+          </div>
         </div>
-        <div class="custom-section__content">
-          <input type="text" class="custom-section__input" placeholder="Enter your name">
-          <input type="email" class="custom-section__input" placeholder="Enter your email address">
-          <textarea class="custom-section__textarea" placeholder="Write your message"></textarea>
-          <button class="button">Send Message</button>
+        <div class="input-group">
+          <label for="company-name">Company Name (Optional):</label>
+          <input
+            type="text"
+            id="company-name"
+            placeholder="Company Name (Optional)"
+          />
+        </div>
+        <div class="input-group">
+          <label for="country">Country / Region:</label>
+          <select id="country">
+            <option value="" selected disabled>Select Country</option>
+            <option value="RO">Romania</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <!-- Add more countries as needed -->
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="street-address">Street address:</label>
+          <input type="text" id="street-address" placeholder="Street address" />
+        </div>
+        <div class="input-group">
+          <label for="town-city">Town / City:</label>
+          <input type="text" id="town-city" placeholder="Town / City" />
+        </div>
+        <div class="input-group">
+          <label for="province">Province:</label>
+          <input type="text" id="province" placeholder="Province" />
+        </div>
+        <div class="input-group">
+          <label for="zip-code">ZIP code:</label>
+          <input type="text" id="zip-code" placeholder="ZIP code" />
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" placeholder="Phone" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email address:</label>
+          <input type="email" id="email" placeholder="Email address" />
+        </div>
+        <div class="input-group">
+          <label for="additional-info">Additional information:</label>
+          <textarea
+            id="additional-info"
+            placeholder="Additional information"
+          ></textarea>
         </div>
       </div>
-      
+      <div class="right-section">
+        <table>
+          <tr>
+            <td class="base-text">Product</td>
+            <td class="base-text">Subtotal</td>
+          </tr>
+          <tr>
+            <td>Asgaard sofa <span>x 2</span></td>
+            <td>Lei. 250,00</td>
+          </tr>
+          <tr>
+            <td>Subtotal</td>
+            <td>Lei. 250,00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td class="text-total-price">Lei. 250,00</td>
+          </tr>
+        </table>
+        <div class="payment-methods">
+          <label class="radio-container">
+            Direct Bank Transfer
+            <input type="radio" name="payment-method" id="bank-transfer" />
+            <span class="checkmark"></span>
+            <div class="payment-info">
+              Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+            </div>
+          </label>
+          <label class="radio-container">
+            Card Bank Transfer
+            <input type="radio" name="payment-method" id="card-transfer" />
+            <span class="checkmark"></span>
+            <div class="payment-info">
+              Insert text here for Card Bank Transfer.
+            </div>
+          </label>
+          <label class="radio-container">
+            Cash On Delivery
+            <input type="radio" name="payment-method" id="cash-delivery" />
+            <span class="checkmark"></span>
+            <div class="payment-info">
+              Insert text here for Cash On Delivery.
+            </div>
+          </label>
+        </div>
+        
+        <p>
+          Your personal data will be used to support your experience throughout
+          this website, to manage access to your account, and for other purposes
+          described in our <b>privacy policy.</b>
+        </p>
+        <button class="ordet-button">Place order</button>
+      </div>
+    </div>
   </div>
 </section>
 
-    </div>
-  </div>
 </div>
 <!-- Main Footer start -->
 <footer>

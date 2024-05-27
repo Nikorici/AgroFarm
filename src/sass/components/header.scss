@@ -46,6 +46,7 @@
         display: flex;
         gap: 40px;
 
+
         button {
           border: none;
           background-color: transparent;
@@ -54,6 +55,14 @@
         img {
           width: 25px;
           height: 25px;
+        }
+      }
+      .cart-button {
+        position: relative;
+
+        .product {
+          position: absolute;
+          
         }
       }
     }

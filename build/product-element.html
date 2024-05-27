@@ -40,9 +40,8 @@
       </div>
       <div class="header-top-bar">
         <ul class="nav-list">
-          <li><a href="#!">Home</a></li>
+          <li><a href="#!">Create Product</a></li>
           <li><a href="#!">Shop</a></li>
-          <li><a href="#!">About</a></li>
           <li><a href="#!">Contact</a></li>
         </ul>
         <div class="functional-element">
@@ -70,6 +69,16 @@
           <button class="cart-button">
             <img
               src="../../img//ant-design_shopping-cart-outlined.png"
+              alt=""
+              class="cart-icon"
+            />
+            <div class="product">
+              <p>1</p>
+            </div>
+          </button>
+          <button class="cart-button">
+            <img
+              src="../../img//logout.png"
               alt=""
               class="cart-icon"
             />
@@ -172,7 +181,11 @@
           </div>
 
           <button>Add To Cart</button>
-          <button>+ Compare</button>
+          <button class="compare-btn">
+            <img src="../../img/heart.png" alt="" />
+            <img src="../../img/heart-logo-svgrepo-com.svg" alt="" />
+            <p>Compare</p>
+          </button>
         </div>
         <div class="short-info">
           <div class="short-info__category">
@@ -296,12 +309,17 @@
               enim efficitur.
             </p>
           </div>
+          <form class="comment-people">
+            <textarea>Scrie un mesaj</textarea>
+            <br>
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
     </div>
     <div class="agro-map">
       <h2>Product On The Map</h2>
-      <div id="map" style="height: 400px"></div>
+      <img src="../../img/map-md.png" alt="" style="height: 500px" width="100%">
     </div>
     <div class="product-related">
       <h2 class="text-center">Our Products</h2>
