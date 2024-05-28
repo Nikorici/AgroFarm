@@ -2574,6 +2574,10 @@ footer {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 1000px) {
+    .payment .payment-container {
+      flex-direction: column;
+      align-items: center; } }
 
 .payment .card {
   position: relative;
@@ -2619,7 +2623,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 35%; }
+  width: 100%;
+  max-width: 480px; }
   .payment .form label {
     display: flex;
     flex-direction: column;
@@ -2640,3 +2645,146 @@ footer {
     cursor: pointer; }
     .payment .form button:hover {
       background: #a4508b; }
+
+.payment .payment-succes {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  margin-top: 80px; }
+  .payment .payment-succes img {
+    width: 65px;
+    height: 65px; }
+
+.like-product .card {
+  width: calc(10% - 10px);
+  margin-bottom: 20px;
+  max-width: 300px;
+  position: relative; }
+  @media (max-width: 1200px) {
+    .like-product .card {
+      width: calc(28.33% - 10px); } }
+  @media (max-width: 900px) {
+    .like-product .card {
+      width: calc(35% - 10px); } }
+  @media (max-width: 600px) {
+    .like-product .card {
+      width: 100%; } }
+
+.like-product .card-body img {
+  width: 20px;
+  height: 20px; }
+
+.like-product .card-body .change-element {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-top: 20px;
+  gap: 5px;
+  flex-direction: column; }
+
+.like-product .card-body .card-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #128d3f;
+  color: #128d3f;
+  border-radius: 10px;
+  padding: 5px 25px;
+  justify-content: center; }
+  .like-product .card-body .card-text p {
+    font-size: 22px; }
+
+.like-product .card-body .delite-text {
+  border: 1px solid #b88e2f;
+  color: #b88e2f;
+  border-radius: 10px;
+  padding: 5px 25px; }
+
+.like-product .like-post {
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: 10px;
+  top: 10px; }
+  .like-product .like-post img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 6px; }
+
+.like-product #compare-modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.like-product .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.like-product .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.like-product .close:hover,
+.like-product .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+.like-product .comparison-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.like-product .separator {
+  width: 10%;
+  border-left: 2px solid #000; }
+
+.like-product .selected {
+  background-color: #89afd7;
+  color: white;
+  border: 1px solid #89afd7; }
+
+.like-product #compare-modal .modal-content {
+  width: 80%; }
+
+.like-product .comparison-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.like-product .product-comparison {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+  .like-product .product-comparison p {
+    height: 34px; }
+
+.like-product .separator {
+  width: 5%;
+  border-left: 2px solid #000; }
+
+.like-product .comparison-container .better {
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 5px;
+  padding: 5px; }

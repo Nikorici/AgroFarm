@@ -3,6 +3,8 @@
 @@include("partials/number-element.js");
 @@include("partials/stars.js");
 @@include("partials/payment.js");
+@@include("partials/compare.js");
+
 
 
 $(document).ready(function() {
