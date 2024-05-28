@@ -138,6 +138,7 @@
   </div>
   <div class="container">
     <h1>Plasează un anunț</h1>
+    <img class="profile-img" src="../../img/company-profile.png" alt="" />
     <form id="post-ad-form">
       <div class="form-group">
         <label for="product-image">Imagine produs:</label>
@@ -148,6 +149,13 @@
           accept="image/*"
           required
         />
+        <div class="image-add">
+          <img src="../../img/baner-cart.png" alt="" />
+          <img src="../../img/baner-cart.png" alt="" />
+          <img src="../../img/baner-cart.png" alt="" />
+          <img src="../../img/baner-cart.png" alt="" />
+        </div>
+        <button class="delite">Delite</button>
       </div>
       <div class="form-group">
         <label for="product-name">Nume produs:</label>
@@ -191,7 +199,7 @@
             </select>
           </div>
         </div>
-      </div>      
+      </div>
 
       <div class="form-group">
         <label for="country">Țară:</label>
@@ -205,18 +213,37 @@
       </div>
       <div class="form-group">
         <label for="city">Oraș:</label>
-        <input type="text" id="city" name="city" placeholder="Introdu orașul" required />
+        <input
+          type="text"
+          id="city"
+          name="city"
+          placeholder="Introdu orașul"
+          required
+        />
       </div>
       <div class="form-group">
         <label for="street">Stradă:</label>
-        <input type="text" id="street" name="street" placeholder="Introdu strada" required />
+        <input
+          type="text"
+          id="street"
+          name="street"
+          placeholder="Introdu strada"
+          required
+        />
       </div>
-      
+
       <div class="form-group">
         <label for="contact">Număr de contact:</label>
-        <input type="text" id="contact" name="contact" required pattern="[0-9]+" title="Introdu doar cifre." />
+        <input
+          type="text"
+          id="contact"
+          name="contact"
+          required
+          pattern="[0-9]+"
+          title="Introdu doar cifre."
+        />
       </div>
-      
+
       <div class="form-group">
         <label for="email">Adresă de e-mail:</label>
         <input type="email" id="email" name="email" required />
